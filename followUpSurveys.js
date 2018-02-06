@@ -1,14 +1,14 @@
 function sendForm(e){
 
   // Retreieve values from form/spreadsheet on submission
-//  var lastName = formatName(e.values[1]);
-//  var firstName = formatName (e.values[2]);
-//  var userEmail = e.values[3];
-//  var reasonForVisit = e.values[5];
-//  var advisor = e.values[4];
+  var lastName = formatName(e.values[1]);
+  var firstName = formatName (e.values[2]);
+  var userEmail = e.values[3];
+  var reasonForVisit = e.values[5];
+  var advisor = e.values[4];
   
   //load pre-saved survey HTML. Get the raw html by sending the form to yourself and viewing source
-  var survey = HtmlService.createTemplateFromFile('radios').evaluate().getContent();
+  var survey = HtmlService.createTemplateFromFile('survey').evaluate().getContent();
   
   //Format email
   var subject = "Office Visit Follow Up";
